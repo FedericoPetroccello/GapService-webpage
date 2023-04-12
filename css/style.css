@@ -1,0 +1,47 @@
+/* -------------------------------------- NAV-BAR -------------------------------------- */
+
+ul.navbar-nav{
+    color: #101f70;
+}
+
+ul.navbar-nav:hover{
+    color: #db0d0d;
+}
+
+
+
+/* -------------------------------------- HERO ----------------------------------------- */
+
+.index-hero{
+    background-color: #101f70;
+    margin-bottom: 5%;
+}
+/*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
+.text-marcas{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+.text-marcas h2{
+    color:#101f70;
+    font-size: 26px;
+    padding-bottom: 10%;
+}
+
+.text-marcas p{
+    margin-bottom: 1% ;
+    padding-bottom: 3%;
+}
+
+/*----------------------------------- COLOR WHEN HOVER EN MARCAS --------------------------*/
+
+img.img-fluid{
+    filter: grayscale(100%);
+}
+
+img.img-fluid:hover{
+    filter:none;
+}
+
