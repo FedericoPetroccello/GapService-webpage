@@ -1,10 +1,31 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* -------------------------------------- NAV-BAR -------------------------------------- */
 
-ul.navbar-nav{
+a.nav-link{
     color: #101f70;
 }
 
-ul.navbar-nav:hover{
+a.nav-link.active{
+  color: #db0d0d;
+}
+
+a.nav-link:hover{
     color: #db0d0d;
 }
 
@@ -46,37 +67,42 @@ img.img-fluid:hover{
 }
 
 /*----------------------------------- FAQ --------------------------*/
-.row card-deck{
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-}
-.col-md-12{
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #101e70eb;
-    color: aliceblue;
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1.5px;
-    justify-content: center;
-    margin: 1rem;
+
+.col-md-10{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 .card-body h3{
-    color: #db0d0d;
+    color: #ff0000;
 
 }
-/*----------------------------------- FAQ --------------------------*/
+.row.row-cols-1{
+
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-row:2 ;
+  padding: none;
+  margin: 0px;
+}
+/*----------------------------------- Contacto --------------------------*/
 .container__contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50%;
     background-color: #101f70;
     color: aliceblue;
     padding: 1rem;
@@ -106,6 +132,7 @@ img.img-fluid:hover{
 
   form input[type="text"],
   form textarea {
+    display: flex;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -130,3 +157,90 @@ img.img-fluid:hover{
     background-color: #ff0101;
     color: white
   }
+
+  /*----------------------------------- SERVICIOS --------------------------*/
+.container-servicios{
+  margin: 1rem;
+}
+
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.servicio-img {
+  max-width: 330px;
+  max-height: 330px;
+  margin-right: 20px;
+}
+
+.servicios-text-container {
+  flex: 1;
+}
+
+.servicio-title {
+  margin-top: 0;
+}
+
+.servicio-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+  /*----------------------------------- FOOTER --------------------------*/
+
+footer {
+  background-color: #faf3f3;
+  color: #000000;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin: 0 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
