@@ -59,49 +59,43 @@
           </nav>
     </header>
     <main>
-        <div class="header-formulario">
-            <h2>CONTACTO</h2>
-        </div>
-        <div class="titulo-formulario">
-            <h2>GAP SERVICE</h2>
-        </div>
-        <div class="subtitulo-formulario">
-            <h3>Servicios Técnicos Termo Mecánicos</h3>
-        </div>
-        <div class="descripcion-formulario">
-            <h4>Villa Luro, Ciudad Autónoma de Buenos Aires | (011) 15- 4402 6996 | info@gapservice.com.ar</h4>
-        </div>
-
-        <div class="formulario-container">
-            <form action="formulario">
-                <!-- Pide Nombre completo -->
-                <div>
-                    <input class="nombre-completo" type="text" placeholder="Nombre Completo...">
-                </div>
-                <!-- Pide Email -->
-                <div>
-                    <input class="email" type="email" placeholder="Email...">
-                </div>
-                <!-- Pide Nombre de empresa -->
-                <div>
-                    <input class="empresa" type="text" placeholder="Nombre de su empresa...">
-                </div>
-                <!-- Pide Numero de Telefono -->
-                <div>
-                    <input class="numero-telefonico" type="tel" placeholder="Telefono de contacto...">
-                </div>
-                <!-- Pide Domicilio -->
-                <div>
-                    <input class="domicilio" type="text" placeholder="Domicilio...">
-                </div>
-                <!-- Pide detalles de asunto -->
-                <div>
-                    <textarea class="asunto" cols="50" rows="10"
-                        placeholder="Indique el asunto por el cual nos contacta..."></textarea>
-                </div>
-                    <input class="boton-enviar" type="submit" value="Enviar" with="40px">
-            </form>
-        </div>
+<div class="container__contacto">
+  <div class="header-formulario">
+    <h2>CONTACTO</h2>
+  </div>
+  <div class="titulo-formulario">
+    <h2>GAP SERVICE</h2>
+  </div>
+  <div class="subtitulo-formulario">
+    <h3>Servicios Técnicos Termo Mecánicos</h3>
+  </div>
+  <div class="descripcion-formulario">
+    <h4>Villa Luro, Ciudad Autónoma de Buenos Aires | (011) 15- 4402 6996 | info@gapservice.com.ar</h4>
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo:" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="email" name="email" placeholder="Email:" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="empresa" name="empresa" placeholder="Empresa:" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="telefono" name="telefono" placeholder="Teléfono:" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio:" required>
+      </div>
+      <div class="form-group">
+        <textarea id="asunto" name="asunto" placeholder="Asunto:" required></textarea>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
     </main>
     <footer>
         <h2>NUESTRAS REDES SOCIALES</h2>
