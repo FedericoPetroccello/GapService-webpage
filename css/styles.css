@@ -136,14 +136,23 @@ img.img-fluid.partner:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: #101f70;
-  color: aliceblue;
+  background-color: #ffffff;
+  color: #101f70;
   padding: 1rem;
 }
 
 .titulo-formulario h2 {
-  color: white;
+  color: rgb(238, 12, 12);
   font-weight: bold;
+}
+.subtitulo-formulario h3{
+  display: flex;
+  font-weight: bold;
+}
+
+.descripcion-formulario h4{
+  font-weight: normal;
+  font-size: 2vh;
 }
 
 .form-group {
@@ -170,16 +179,17 @@ form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
+  box-sizing: content-box;
+  border: 2px solid #101f70;
+  color:#000000;
   border-radius: 4px;
   resize: none;
 }
 
 form input[type="submit"] {
-  background-color: #fdfeff;
+  background-color: #101f70;
   font-weight: bold;
-  color: #000000;
+  color: #fffdfd;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
