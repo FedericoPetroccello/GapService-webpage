@@ -17,58 +17,89 @@ body {
 
 /* -------------------------------------- NAV-BAR -------------------------------------- */
 
-a.nav-link{
-    color: #101f70;
+
+
+a.nav-link {
+  color: #101f70;
+  font-size: 18px;
 }
 
-a.nav-link.active{
+a.nav-link.active {
   color: #db0d0d;
 }
 
-a.nav-link:hover{
-    color: #db0d0d;
+a.nav-link:hover {
+  color: #db0d0d;
 }
 
 
 
 /* -------------------------------------- HERO ----------------------------------------- */
 
-.index-hero{
-    background-color: #101f70;
-    margin-bottom: 5%;
-}
-/*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
-.text-marcas{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-}
-.text-marcas h2{
-    color:#101f70;
-    font-size: 26px;
-    padding-bottom: ;
+.index-hero {
+  background-color: #101f70;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
 }
 
-.text-marcas p{
-    margin-bottom: 1% ;
-    padding-bottom: 3%;
+.index-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.index-hero h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.index-hero img {
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .index-hero h2 {
+    font-size: 2rem;
+  }
+
+  .index-hero h5 {
+    font-size: 1rem;
+  }
+}
+
+/*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
+.text-marcas {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.text-marcas h2 {
+  color: #101f70;
+  font-weight: bolder;
+  font-size: 40px;
+  padding-bottom: ;
+}
+
+.text-marcas p {
+  margin-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 /*----------------------------------- COLOR WHEN HOVER EN MARCAS --------------------------*/
 
-img.img-fluid{
-    filter: grayscale(100%);
+img.img-fluid.partner {
+  filter: grayscale(100%);
 }
 
-img.img-fluid:hover{
-    filter:none;
+img.img-fluid.partner:hover {
+  filter: none;
 }
 
 /*----------------------------------- FAQ --------------------------*/
 
-.col-md-10{
+.col-md-10 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -81,100 +112,105 @@ img.img-fluid:hover{
   border-radius: 10px;
 }
 
-.card-body h3{
-    color: #ff0000;
+.card-body h3 {
+  color: #ff0000;
 
 }
-.row.row-cols-1{
+
+.row.row-cols-1 {
 
   display: grid;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
-  grid-row:2 ;
+  grid-row: 2;
   padding: none;
   margin: 0px;
 }
+
 /*----------------------------------- Contacto --------------------------*/
 .container__contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    background-color: #101f70;
-    color: aliceblue;
-    padding: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #101f70;
+  color: aliceblue;
+  padding: 1rem;
+}
 
-  .titulo-formulario h2 {
-    color: white;
-    font-weight: bold;
-  }
+.titulo-formulario h2 {
+  color: white;
+  font-weight: bold;
+}
 
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
 
-  input, textarea {
-    color: #101f70;
-    font-weight: bold;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
+input,
+textarea {
+  color: #101f70;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
 
-  form input[type="text"],
-  form textarea {
-    display: flex;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-  }
-  
-  form input[type="submit"] {
-    background-color: #fdfeff;
-    font-weight: bold;
-    color: #000000;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right; /* Agregamos esta propiedad para que el botón quede a la derecha */
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #ff0101;
-    color: white
-  }
+form input[type="text"],
+form textarea {
+  display: flex;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
 
-  /*----------------------------------- SERVICIOS --------------------------*/
-.container-servicios{
+form input[type="submit"] {
+  background-color: #fdfeff;
+  font-weight: bold;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  /* Agregamos esta propiedad para que el botón quede a la derecha */
+}
+
+form input[type="submit"]:hover {
+  background-color: #ff0101;
+  color: white
+}
+
+/*----------------------------------- SERVICIOS --------------------------*/
+.container-servicios {
   margin: 1rem;
 }
 
 .servicio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .servicio-img {
-    width: 330px;
-    height: 330px;
-    border-radius: 50%;
-    margin-right: 30px;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
+
 .servicio {
   display: flex;
   flex-direction: row;
@@ -184,7 +220,7 @@ img.img-fluid:hover{
   max-width: 800px;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
   border-radius: 10px;
 }
 
@@ -208,14 +244,14 @@ img.img-fluid:hover{
   color: #666;
 }
 
-  /*----------------------------------- FOOTER --------------------------*/
+/*----------------------------------- FOOTER --------------------------*/
 
 footer {
-  background-color: #faf3f3;
-  color: #000000;
+  background-color: #101f70;
+  color: #f6f0f0;
   padding: 30px 0;
+  box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 }
 
@@ -230,6 +266,13 @@ footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+footer img{
+  filter: invert(100%);
+}
+footer img:hover{
+  filter: invert(80%);
 }
 
 footer li {
