@@ -1,0 +1,158 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* -------------------------------------- NAV-BAR -------------------------------------- */
+
+a.nav-link {
+  color: #101f70;
+  font-size: 18px;
+
+  &.active {
+    color: #db0d0d;
+  }
+
+  &:hover {
+    color: #db0d0d;
+  }
+}
+
+/* -------------------------------------- HERO ----------------------------------------- */
+
+.index-hero {
+  background-color: #101f70;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: 767px) {
+      font-size: 2rem;
+    }
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    @media (max-width: 767px) {
+      font-size: 1rem;
+    }
+  }
+
+  img {
+    margin-top: 1rem;
+  }
+}
+
+/*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
+
+.text-marcas {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+
+  h2 {
+    color: #101f70;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+
+  p {
+    margin-bottom: 1%;
+    padding-bottom: 3%;
+  }
+}
+
+/*----------------------------------- COLOR WHEN HOVER EN MARCAS --------------------------*/
+
+img.img-fluid.partner {
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: none;
+  }
+}
+
+/*----------------------------------- FAQ --------------------------*/
+
+.col-md-10 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  .card-body {
+    h3 {
+      color: #ff0000;
+    }
+  }
+}
+
+.row.row-cols-1 {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-row: 2;
+  padding: none;
+  margin: 0px;
+}
+
+/*----------------------------------- Contacto --------------------------*/
+
+.container__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #ffffff;
+  color: #101f70;
+  padding: 1rem;
+
+  .titulo-formulario {
+    h2 {
+      color: rgb(238, 12, 12);
+      font-weight: bold;
+    }
+  }
+
+  .subtitulo-formulario {
+    h3 {
+      display: flex;
+      font-weight: bold;
+    }
+  }
+
+  .descripcion-formulario {
+    h4 {
+      font-weight: normal;
+      font-size: 2vh;
+    }
+  }
+   

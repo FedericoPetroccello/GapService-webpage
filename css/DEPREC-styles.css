@@ -1,403 +1,302 @@
-/*--------------RESET-------------------*/
-*{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-}
-
-/*------------- GENERAL --------------- */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/*--------------- HEADER --------------- */
-
-header { 
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
-    justify-items: flex-start;
-    width: 50vw;
-    height: 65px;
-    margin-left: 150px;
-    overflow: hidden;
-    background-color: ;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-}
-
-.logo {
-    width: 200px;
-    height: 60px;
-    margin-right: 20px;
-}
-
-.logo img {
-    max-width: 100%;
-    height: 100%;
-}
-
-.navegador {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
-    font-family: 
-
-}
-
-.opciones-menu li {
-    display: inline-flex;
-    justify-content: flex-end;
-    margin-left: 20px;
-    letter-spacing: 0.04rem;
+    box-sizing: border-box;
+  }
+  
+  html {
     font-size: 16px;
-    list-style-type: none;
-    font-weight: bold;
-}
-
-/*Quita el subrayado, no pude realizarlo en los otros padres*/
-.opciones-menu a {
-    color: black;
-    text-decoration: none;
-}
-
-.opciones-menu a:hover {
-    color: rgb(255, 7, 7);
-}
-
-/*--------------- PRESENTACION --------------- */
-
-.presentacion {
-    background-color: #1a2775;
-    display: inline-flex;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.texto-presentacion {
-    width: 100%;
-    height: 100%;
-    color: aliceblue;
-    font-size: 26px;
-    margin-left: 5%;
-    margin-top: 205px;
-}
-
-.imagen-presentacion {
-    width: 100% ;
-    height: 100%;
-    border-radius: 40px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    align-content: center;
-
-
-}
-
-/*---------------FORMULARIOS DE CONTACTO---------------*/
-
-
-.header-formulario {
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* -------------------------------------- NAV-BAR -------------------------------------- */
+  
+  
+  
+  a.nav-link {
+    color: #101f70;
+    font-size: 18px;
+  }
+  
+  a.nav-link.active {
+    color: #db0d0d;
+  }
+  
+  a.nav-link:hover {
+    color: #db0d0d;
+  }
+  
+  
+  
+  /* -------------------------------------- HERO ----------------------------------------- */
+  
+  .index-hero {
+    background-color: #101f70;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+  }
+  
+  .index-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .index-hero h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .index-hero img {
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 767px) {
+    .index-hero h2 {
+      font-size: 2rem;
+    }
+  
+    .index-hero h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  /*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
+  .text-marcas {
     display: flex;
-    color: #1a2775;
-    font-size: 30px;
-    justify-content: center;
-    align-content: center;
-    background-color: aliceblue;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
-
-}
-
-.titulo-formulario {
-    display: flex;
-    color: #6374d3;
-    font-size: 20px;
-    justify-content: center;
-    align-content: center;
-    border: 0%;
-}
-
-.subtitulo-formulario {
-    display: flex;
-    color: #1a2775;
-    font-size: 17px;
-    justify-content: center;
-    align-content: first baseline;
-}
-
-.descripcion-formulario {
-    display: flex;
-    color: #1a2775;
-    font-size: 15px;
-    justify-content: center;
-    align-content: first baseline;
-}
-
-.formulario-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5%;
-    width: 90%;
-    padding: 2%;
-    border-radius: 25px;
-    background-color: #1a2775;
-}
-
-.nombre-completo {
-    width: 600px;
-    height: 40px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    margin: 10px;
-    font-size: 15px;
-}
-
-.email,
-.empresa,
-.numero-telefonico,
-.domicilio {
-    margin: 10px;
-    width: 600px;
-    height: 40px;
-    font-size: 15px;
-}
-
-.asunto {
-    margin: 10px;
-    width: 600px;
-    height: 200px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    font-size: 15px;
-}
-
-/*---------------FAQ's-------------------*/
-.titulo-faq {
-    display: flex;
-    color: #751a1a;
-    font-size: 25px;
+    text-align: center;
     justify-content: center;
     align-content: center;
-    background-color: rgb(255, 240, 240);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.container-faq {
-    margin: 15%;
-    margin-top: 20px;
-    width: auto;
-    height: auto;
-}
-
-.container-faq h3 {
-    margin: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: crimson;
-    font-size: 26px;
-    background-color: rgb(255, 240, 240);
-    width: 100%;
-    height: 30px;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-    border-radius: 25px;
-}
-
-.container-faq h4 {
-    color: #101951;
-    font-size: 20px;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-
-}
-
-/*-------------------------- VENTAS ------------------------------*/
-
-.venta-header-formulario {
-    display: flex;
-    color: #1c751a;
-    font-size: 30px;
-    justify-content: center;
-    align-content: center;
-    background-color: rgb(241, 255, 240);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.venta-titulo-formulario {
-    display: flex;
-    color: #83cb78;
-    font-size: 20px;
-    justify-content: center;
-    align-content: center;
-    border: 0%;
-}
-
-.venta-subtitulo-formulario {
-    display: flex;
-    color: #1a2775;
-    font-size: 17px;
-    justify-content: center;
-    align-content: first baseline;
-}
-
-.venta-descripcion-formulario {
-    display: flex;
-    color: #1a2775;
-    font-size: 15px;
-    justify-content: center;
-    align-content: first baseline;
-}
-
-.venta-formulario-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5%;
-    width: 90%;
-    padding: 2%;
-    border-radius: 25px;
-    background-color: #1a2775;
-}
-
-.venta-nombre-completo {
-    width: 600px;
-    height: 40px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    margin: 10px;
-    font-size: 15px;
-    color: black;
-}
-
-.venta-email,
-.venta-empresa,
-.venta-numero-telefonico,
-.venta-domicilio {
-    margin: 10px;
-    width: 600px;
-    height: 40px;
-    font-size: 15px;
-    color: black;
-}
-
-.venta-tipo-de-producto {
-    margin: 10px;
-    width: 606px;
-    height: 44px;
-    font-size: 15px;
-    color: rgb(118, 118, 118);
-}
-
-.venta-descripcion-producto {
-    margin: 10px;
-    width: 600px;
-    height: 200px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    font-size: 15px;
-    color: black;
-
-}
-
-/*-------------------------SERVICIOS MAIN--------------------------*/
-.container-servicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 100px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.servicios-header-title {
-    display: flex;
-    color: #1a2775;
-    font-size: 30px;
-    justify-content: center;
-    align-content: center;
-    background-color: aliceblue;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.servicio {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    height: 90%;
-    padding: 10px 20px;
-    background-color: aliceblue;
-    margin: 25px;
-    border-radius: 25px;
-    border-color: #10195107;
-    border-style: solid;
-
-}
-
-.servicio img {
-    width: 400px;
-    height: 300px;
-    background-color: aliceblue;
-    margin-left: 10px;
-    margin-right: 0px;
-    border-radius: 70px;
-}
-
-.servicio-title {
-    font-size: 30px;
-    align-content: start;
-    justify-content: start;
-}
-
-.servicio-description {
-    font-size: 25px;
-    align-content: start;
-    justify-content: start;
-}
-
-/*--------------------FOOTER---------------------------*/
-
-footer{
-    padding-inline: 0;
-    background-color: #101951;
-    height: 100px;
-}
-
-footer li {
-    display: inline-flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     justify-items: center;
-    margin-left: 40px;
-    margin-top: 20px;
-    letter-spacing: 0.04rem;
-    font-size: 20px;
-    list-style-type: none;
-    list-style: none;
-    background-color: azure;
+  }
+  
+  .text-marcas h2 {
+    color: #101f70;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  
+  .text-marcas p {
+    margin-bottom: 1%;
+    padding-bottom: 3%;
+  }
+  
+  /*----------------------------------- COLOR WHEN HOVER EN MARCAS --------------------------*/
+  
+  img.img-fluid.partner {
+    filter: grayscale(100%);
+  }
+  
+  img.img-fluid.partner:hover {
+    filter: none;
+  }
+  
+  /*----------------------------------- FAQ --------------------------*/
+  
+  .col-md-10 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 10px 10px
-}
-
-
+  }
+  
+  .card-body h3 {
+    color: #ff0000;
+  
+  }
+  
+  .row.row-cols-1 {
+  
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-row: 2;
+    padding: none;
+    margin: 0px;
+  }
+  
+  /*----------------------------------- Contacto --------------------------*/
+  .container__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    color: #101f70;
+    padding: 1rem;
+  }
+  
+  .titulo-formulario h2 {
+    color: rgb(238, 12, 12);
+    font-weight: bold;
+  }
+  .subtitulo-formulario h3{
+    display: flex;
+    font-weight: bold;
+  }
+  
+  .descripcion-formulario h4{
+    font-weight: normal;
+    font-size: 2vh;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  
+  input,
+  textarea {
+    color: #101f70;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form textarea {
+    display: flex;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: content-box;
+    border: 2px solid #101f70;
+    color:#000000;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  form input[type="submit"] {
+    background-color: #101f70;
+    font-weight: bold;
+    color: #fffdfd;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    /* Agregamos esta propiedad para que el botón quede a la derecha */
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #ff0101;
+    color: white
+  }
+  
+  /*----------------------------------- SERVICIOS --------------------------*/
+  
+  
+  .container-servicios {
+    margin: 1rem;
+  
+  }
+  
+  .servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .servicio-img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  
+  .servicio {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+  }
+  
+  .servicio-img {
+    max-width: 330px;
+    max-height: 330px;
+    margin-right: 20px;
+  }
+  
+  .servicios-text-container {
+    flex: 1;
+  }
+  
+  .servicio-title {
+    margin-top: 0;
+  }
+  
+  .servicio-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  /*----------------------------------- FOOTER --------------------------*/
+  
+  footer {
+    background-color: #101f70;
+    color: #f6f0f0;
+    padding: 30px 0;
+    box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer img{
+    filter: invert(100%);
+  }
+  footer img:hover{
+    filter: invert(80%);
+  }
+  
+  footer li {
+    margin: 0 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
