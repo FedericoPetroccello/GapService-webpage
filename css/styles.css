@@ -136,6 +136,55 @@ img.img-fluid.partner:hover {
   font-size: 2vh;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  color: #101f70;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #101f70;
+  opacity: 0.6;
+}
+
+form input[type=text],
+form textarea {
+  display: flex;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: content-box;
+  border: 2px solid #101f70;
+  color: #000000;
+  border-radius: 4px;
+  resize: none;
+}
+form input[type=submit] {
+  background-color: #101f70;
+  font-weight: bold;
+  color: #fffdfd;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+form input[type=submit]:hover {
+  background-color: #ff0101;
+  color: white;
+}
+
 /*----------------------------------- Servicios --------------------------*/
 .container-servicios {
   margin: 1rem;
