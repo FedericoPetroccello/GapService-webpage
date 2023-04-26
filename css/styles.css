@@ -16,54 +16,43 @@ body {
 }
 
 /* -------------------------------------- NAV-BAR -------------------------------------- */
-
-
-
 a.nav-link {
   color: #101f70;
   font-size: 18px;
 }
-
 a.nav-link.active {
   color: #db0d0d;
 }
-
 a.nav-link:hover {
   color: #db0d0d;
 }
 
-
-
 /* -------------------------------------- HERO ----------------------------------------- */
-
 .index-hero {
   background-color: #101f70;
   margin-bottom: 50px;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
 }
-
 .index-hero h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
-.index-hero h5 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.index-hero img {
-  margin-top: 1rem;
-}
-
 @media (max-width: 767px) {
   .index-hero h2 {
     font-size: 2rem;
   }
-
+}
+.index-hero h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
   .index-hero h5 {
     font-size: 1rem;
   }
+}
+.index-hero img {
+  margin-top: 1rem;
 }
 
 /*----------------------------------- TEXTOS PRESENTACION MARCAS --------------------------*/
@@ -74,30 +63,25 @@ a.nav-link:hover {
   align-content: center;
   justify-items: center;
 }
-
 .text-marcas h2 {
   color: #101f70;
   font-weight: bolder;
   font-size: 40px;
 }
-
 .text-marcas p {
   margin-bottom: 1%;
   padding-bottom: 3%;
 }
 
 /*----------------------------------- COLOR WHEN HOVER EN MARCAS --------------------------*/
-
 img.img-fluid.partner {
   filter: grayscale(100%);
 }
-
 img.img-fluid.partner:hover {
   filter: none;
 }
 
 /*----------------------------------- FAQ --------------------------*/
-
 .col-md-10 {
   flex-direction: row;
   justify-content: center;
@@ -110,14 +94,11 @@ img.img-fluid.partner:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
-.card-body h3 {
+.col-md-10 .card-body h3 {
   color: #ff0000;
-
 }
 
 .row.row-cols-1 {
-
   display: grid;
   flex-direction: row;
   justify-content: center;
@@ -144,159 +125,15 @@ img.img-fluid.partner:hover {
   color: rgb(238, 12, 12);
   font-weight: bold;
 }
-.subtitulo-formulario h3{
+
+.subtitulo-formulario h3 {
   display: flex;
   font-weight: bold;
 }
 
-.descripcion-formulario h4{
+.descripcion-formulario h4 {
   font-weight: normal;
   font-size: 2vh;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-
-input,
-textarea {
-  color: #101f70;
-  font-weight: bold;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-form input[type="text"],
-form textarea {
-  display: flex;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: content-box;
-  border: 2px solid #101f70;
-  color:#000000;
-  border-radius: 4px;
-  resize: none;
-}
-
-form input[type="submit"] {
-  background-color: #101f70;
-  font-weight: bold;
-  color: #fffdfd;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-  /* Agregamos esta propiedad para que el botón quede a la derecha */
-}
-
-form input[type="submit"]:hover {
-  background-color: #ff0101;
-  color: white
-}
-
-/*----------------------------------- SERVICIOS --------------------------*/
-
-
-.container-servicios {
-  margin: 1rem;
-
-}
-
-.servicio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.servicio-img {
-  width: 330px;
-  height: 330px;
-  border-radius: 50%;
-  margin-right: 30px;
-}
-
-.servicio {
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 10% auto;
-  max-width: 1200px;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.103);
-  border-radius: 10px;
-}
-
-.servicio-img {
-  max-width: 330px;
-  max-height: 330px;
-  margin-right: 20px;
-}
-
-.servicios-text-container {
-  flex: 1;
-}
-
-.servicio-title {
-  margin-top: 0;
-}
-
-.servicio-description {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #666;
-}
-
-/*----------------------------------- FOOTER --------------------------*/
-
-footer {
-  background-color: #101f70;
-  color: #f6f0f0;
-  padding: 30px 0;
-  box-shadow: 0px -10px 5px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin-top: 20px;
-}
-
-footer h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer img{
-  filter: invert(100%);
-}
-footer img:hover{
-  filter: invert(80%);
-}
-
-footer li {
-  margin: 0 20px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+/*# sourceMappingURL=styles.css.map */

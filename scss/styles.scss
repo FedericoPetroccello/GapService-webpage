@@ -134,24 +134,25 @@ img.img-fluid.partner {
   background-color: #ffffff;
   color: #101f70;
   padding: 1rem;
+}
 
-  .titulo-formulario {
-    h2 {
-      color: rgb(238, 12, 12);
-      font-weight: bold;
-    }
+.titulo-formulario {
+  h2 {
+    color: rgb(238, 12, 12);
+    font-weight: bold;
   }
+}
 
-  .subtitulo-formulario {
-    h3 {
-      display: flex;
-      font-weight: bold;
-    }
+.subtitulo-formulario {
+  h3 {
+    display: flex;
+    font-weight: bold;
   }
+}
 
-  .descripcion-formulario {
-    h4 {
-      font-weight: normal;
-      font-size: 2vh;
-    }
+.descripcion-formulario {
+  h4 {
+    font-weight: normal;
+    font-size: 2vh;
   }
+}
